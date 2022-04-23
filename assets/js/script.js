@@ -3,25 +3,19 @@
 document.addEventListener('DOMContentLoaded', function() {
     let button = document.getElementsByTagName 'button');
 
-    for (let button of buttons) {
-        button.addEventListener ('click', function() {
-            if(this.getAttribute
-               ('data-type') === 'pushToPlay' );
-            
-            });
-        }
-
-//Generate random number from 1 to 6 
-
-const firstRandomNum = Math.floor(Math.RandomNum()* 6) + 1
+    
 
 
-//generate img dice1 to dice6
+    function throwDice() {
 
-const firstDiceImage = '/assets/dice1' + firstRandomNum +'.png';
-document.querySelectorAll('img')[0].setAttribute('src', firstDiceImage);
+        //generate random number//
+        const firstRandomNum = Math.floor(Math.RandomNum()* 6) + 1
+        const secondRandomNum = Math.floor(Math.RandomNum()* 6) + 1
 
-
+        //set image src//
+    document.getElementById("gamedice").src = "assets/images/dice" + firstRandomNum + ".png";
+    document.getElementById("macdice").src = "assets/images/dice" + secondRandomNum + ".png";
+    }
 
 
 
