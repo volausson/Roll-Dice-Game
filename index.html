@@ -9,18 +9,19 @@
 </head>
 <body>
     <h1 class="heading">Roll The Dice!</h1>
+    <h2 id="status"></h2>
 
-    <button class="button">push to play</button>
+    <button onclick="pushToPlay()" data-type="play" class="button">push to play</button>
 
     <div class="game">
         
-        <div class="game-area">
+        <div id="die1" class="game-area">
             <p class="gamer"><i class="fa-solid fa-headset"></i> Gamer</p>
-            <img />
+            <img/>
         </div>
-        <div class="game-area">
+        <div id="die2" class="game-area">
             <p class="machine"><i class="fa-solid fa-robot"></i> Machine</p>
-            <img />
+            <img/>
         </div>
     </div>
 
