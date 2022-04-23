@@ -50,11 +50,10 @@ text-align: center;
 
 img {
     width: 200px;
+    margin-bottom: 2rem;
 }
 
-.score-area {
-    margin: 2rem;
-}
+
 .scores {
     text-align: center;
     display: inline-block; 
