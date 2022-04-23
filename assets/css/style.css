@@ -4,9 +4,10 @@ body {
     font-family: 'Press Start 2P', cursive;
     background:
     linear-gradient(to right, #16d7cb, #ffa140);
+    text-align: center;
 }
 
-.wrapper {
+.game {
 width: 75%;
 margin-left: auto;
 margin-right: auto;
@@ -14,9 +15,10 @@ margin-top: 1%;
 text-align: center;
 }
 
-h1 {
-    margin top: 20px;
+.heading {
+    margin-top: 20px;
     font-size: 2.5rem;
+    text-align: center;
     color: rgb(28, 19, 19);
 }
 
@@ -26,11 +28,31 @@ h1 {
     display: inline-block;
 }
 
-p {
-    font-size: 1.5rem;
-    color: rgb(28, 19, 19);
+.button {
+    font-size: 20px;
+    padding: 2rem 3rem;
+    border-radius: 50%;
+    text-align: center;
+    margin-left: 45%;
+    margin-top: 2rem;
 }
 
+.gamer {
+    font-size: 1.5rem;
+    color: rgb(28, 19, 19);
+    float: left;
+}
+
+.machine {
+    font-size: 1.5rem;
+    color: rgb(28, 19, 19);
+    float: right;   
+}
 img {
     width: 320px;
+}
+
+.scores {
+    text-align: center;
+    display: inline-block; 
 }
