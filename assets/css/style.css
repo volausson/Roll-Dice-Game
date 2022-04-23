@@ -49,9 +49,12 @@ text-align: center;
 
 
 img {
-    width: 320px;
+    width: 200px;
 }
 
+.score-area {
+    margin: 2rem;
+}
 .scores {
     text-align: center;
     display: inline-block; 

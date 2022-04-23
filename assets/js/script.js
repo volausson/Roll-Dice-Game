@@ -12,14 +12,13 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
 //Generate random number from 1 to 6 
-function 
 
-let firstRandomNum = Math.floor(Math.RandomNum()* 6) + 1
-let secondRandomNum = Math.floor(Math.RandomNum()* 6) + 1
+const firstRandomNum = Math.floor(Math.RandomNum()* 6) + 1
+
 
 //generate img dice1 to dice6
 
-let firstDiceImage = 'assets/dice' + firstRandomNum +'.png';
+const firstDiceImage = '/assets/dice1' + firstRandomNum +'.png';
 document.querySelectorAll('img')[0].setAttribute('src', firstDiceImage);
 
 
