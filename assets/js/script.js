@@ -1,7 +1,7 @@
 //Get the button element and add event listeners 
 
 document.addEventListener('DOMContentLoaded', function() {
-    let button = document.getElementsById'button');
+    let button = document.getElementsByTag('button');
     for (let button of button) {
         button.addEventListener('click',function() {
             let gameType = this.getAttribute('data-type');
@@ -9,9 +9,9 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     throwDice('play');
+}
 
-
-    function throwDice(play); {
+    function throwDice() {
 
         //generate random number//
         const firstRandomNum = Math.floor(Math.RandomNum()* 6) + 1
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (gametype==='play') {
             displayAction(firstRandomNum,secondRandomNum)
         } else {
-            alert(`Unknown game type:${gameType}`;)
+            alert(`Unknown game type:${gameType}`);
         }
 
 
@@ -28,8 +28,5 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById("gamedice").src = "assets/images/dice" + firstRandomNum + ".png";
     document.getElementById("macdice").src = "assets/images/dice" + secondRandomNum + ".png";
     }
-
-
-
 
 
