@@ -4,22 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://kit.fontawesome.com/49f2da9071.js" crossorigin="anonymous"
+    
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Dice Game</title>
 </head>
+
 <body>
     <h1 class="heading">Roll The Dice!</h1>
     <h2 id="status"></h2>
 
-    <button onclick="throwdice()" class="button">push to play</button>
+    <button onclick="throwdice()" data-type="play" class="button">push to play</button>
 
     <div class="game">
         
-        <div id="die1" class="game-area">
+        <div id="dice1" class="game-area">
             <p class="gamer"><i class="fa-solid fa-headset"></i> Gamer</p>
             <img src="assets/images/dice1.png" alt="roll: 1" id="gamedice">
         </div>
-        <div id="die2" class="game-area">
+        <div id="dice2" class="game-area">
             <p class="machine"><i class="fa-solid fa-robot"></i> Machine</p>
             <img src="assets/images/dice1.png" alt="roll: 1" id="macdice">
         </div>
@@ -30,7 +34,7 @@
         <p class="scores">Machine <span id="score-Machine">0</span></p>
     </div>
 
-    <script src="https://kit.fontawesome.com/49f2da9071.js" crossorigin="anonymous"></script>
+   
     <script src="assets/js/script.js"></script> 
 
 </body>
