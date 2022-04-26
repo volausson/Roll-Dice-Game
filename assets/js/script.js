@@ -1,32 +1,35 @@
-//Get the button element and add event listeners 
-
-document.addEventListener('DOMContentLoaded', function() {
-    let button = document.getElementsByTag('button');
-    for (let button of button) {
-        button.addEventListener('click',function() {
-            let gameType = this.getAttribute('data-type');
-            runGameType(gameType);
-        });
-    }
-    throwDice('play');
-}
+    var gamerTotalScore = 0;
+    var machineTotalScore = 0;
+    var numberOfGoes = 10;
 
     function throwDice() {
 
-        //generate random number//
-        const firstRandomNum = Math.floor(Math.RandomNum()* 6) + 1
-        const secondRandomNum = Math.floor(Math.RandomNum()* 6) + 1
+        // scores
+        const gamerScore = document.getElementById('score-Gamer');
+        const machineScore = document.getElementById('score-Machine');
 
-        if (gametype==='play') {
-            displayAction(firstRandomNum,secondRandomNum)
-        } else {
-            alert(`Unknown game type:${gameType}`);
-        }
-
-
-        //set image src//
+        //generate random number
+        const firstRandomNum = Math.floor(Math.Random()* 6) + 1
+        const secondRandomNum = Math.floor(Math.Random()* 6) + 1
+         
+        //set dice image
     document.getElementById("gamedice").src = "assets/images/dice" + firstRandomNum + ".png";
     document.getElementById("macdice").src = "assets/images/dice" + secondRandomNum + ".png";
-    }
+    numberOfGoes--;
+
+    //find out who won the roll using firstRandomNum and secondRandomNum
+        if (firstRandomNum > secondRandomNum) {
+            //if firstRandomNum won then increment the gamer score
+            gamerTotalScore ++;
+            gamerTotalScore.innerText=gamerTotalScore.toString();
+        }
+        if (secondRandomNum > firstRandomNum) {
+           //if secondRandomNum won then increment the machine score 
+           machineTotalScore ++;
+           machineTotalScore.innerText=machineTotalScore.toString();
+        }
+        
+
+}
 
 
